@@ -1,2 +1,0 @@
-# Archana-LeetCode
-Leetcode solutions
