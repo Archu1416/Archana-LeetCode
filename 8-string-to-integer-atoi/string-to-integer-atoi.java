@@ -1,11 +1,9 @@
 class Solution {
     public int myAtoi(String s) {
+        s=s.trim();
         int n = s.length();
         int i = 0;
         int sign = 1;
-        while(i<n && s.charAt(i)==' ') {
-            i++;
-        }
         if (i>=n) {
             return 0;
         }
