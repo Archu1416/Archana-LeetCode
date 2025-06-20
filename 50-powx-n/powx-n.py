@@ -1,3 +1,12 @@
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        return x**n
+        res=1.0
+        if n<0:
+            x=1/x
+            n=-n
+        while n:
+            if n % 2:      
+                res *= x
+            x *= x         
+            n //= 2     
+        return res
